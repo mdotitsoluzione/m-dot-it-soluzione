@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no , minimum-scale=1.0 , maximum-scale=1.0">
+    <meta name="keywords" contnet="contact nesma al muheet general contracting company , contact nesma , contact namco ">
+    <!-- favicon image -->
+    <link rel='icon' type="image/x-icon" href="images/logo2.png">
+    <!-- fontawesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <!-- own main css file link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- home css file  -->
+    <link rel="stylesheet" href="home.css">
+    <!-- own css file -->
+    <link rel="stylesheet" href="contact.css">
+     <!-- animat.css cdn link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+     <!-- jquery cdn link -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+     <!-- waypoints cdn link -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <!-- own animation css file -->
+    <link rel="stylesheet" href="animate.css">
+    <title> CONTACT US || NESMA AL MUHEET GENERAL CONTRACTING COMPANY</title>
+</head>
+<body>
+    <div class="loading">
+        <div class="spinning"></div>
+    </div>
+    <!-- navbar starts here -->
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"> <img src="images/logo2.png" alt="Logo not found">
+                <span>NAMCO</span></a>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="about.html" class="nav-link">About us</a>
+            </li>
+            <li class="nav-item drop-container">
+                <a class="nav-link">Our Services</a>
+                <span><i class="fa-solid fa-angle-down angle"></i></span>
+                <div class="dropdown">
+                    <a href="Fitout.html" class="dropdown-link ">
+                        <i class="fa-solid fa-angle-right icon"></i>
+                        Fit out</a>
+                    <!-- <a href="Electricalworks.html" class="dropdown-link ">
+                        <i class="fa-solid fa-angle-right icon"></i>
+                        Electrical works</a> -->
+                    <a href="fabrication.html" class="dropdown-link ">
+                        <i class="fa-solid fa-angle-right icon"></i>
+                        Steel fabrication</a>
+                    <a href="construction.html" class="dropdown-link ">
+                        <i class="fa-solid fa-angle-right icon"></i>
+                        Construction works</a>
+                        <a href="https://almaroof.in/director-message.html" class="dropdown-link ">
+                            <i class="fa-solid fa-angle-right icon"></i>
+                            Manpower</a>
+                </div>
+            </li>
+             <li class="nav-item">
+                <a href="project.html" class="nav-link">Our projects</a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact us</a>
+            </li>
+        </ul>
+        <div class="menu-bar">
+            <div class="line line-one"></div>
+            <div class="line line-two"></div>
+            <div class="line line-three"></div>
+        </div>
+    </div>
+    <!-- home starts here -->
+    <section id="home">
+        <div class="container">
+            <div class="content">
+                <p class="text-2"><span>CONTACT US</span></p>
+            </div>
+        </div>
+    </section>
+  <section id="contact">
+    <div class="contact">
+        <div class="column-1 anim anim-7">
+            <h1 class="heading">Get in <span>touch</span></h1>
+            <div class="content main">
+                <h1 class="title">Project's <span>manager :</span> </h1>
+                <p class="text">UMAR IRAQUI</p>
+            </div>
+            <h1 class="title address">National <span>address :</span> </h1>
+            <div class="content">
+                <i class="fa-solid fa-location-dot icon"></i>
+                <p class="text">
+                    M/S NESMA AL MUHEET CONTRACTINGS EST
+                    BLDG NO 6515,
+                     KHAIBAR STREET, AL SULAY,
+                    P.O. 14264, PIN CODE: 3361,
+                    RIYADH, KINGDOM OD SAUDI ARABIA
+                </p>
+            </div>
+            <div class="content">
+                <i class="fa-solid fa-mobile icon"></i>
+                <p class="text">
+                    0532671837 / 0545984313 /
+                    011-2213456
+                </p>
+            </div>
+            <div class="content links">
+                <i class="fa-solid fa-envelope icon"></i>
+                <p class="text">
+                    <a href="mailto:umar@nesmacontractings.com">umar@nesmacontractings.com</a>
+                    <a href="mailto:operations@nesmacontractings.com">operations@nesmacontractings.com</a>
+                    <a href="mailto:marketing@nesmacontractings.com">marketings@nesmacontractings.com</a>
+                </p>
+            </div>
+            <div class="content image">
+               <a href="images/qrcode.png" target="_blank">
+                <img src="images/qrcode.png" alt="">
+               </a>
+            </div>
+        </div>
+        <form class="column-2 anim anim-8" id="form">
+            <h1 class="heading">Contact <span>Form</span></h1>
+            <div class="inputs">
+                <input type="text" maxlength="20" class="name" placeholder="Enter your name">
+                <input type="email" class="email" placeholder="Enter your email">
+                <input type="number" maxlength="13" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" class="phone-no" placeholder="Enter your number">
+                <input type="text" class="subject" placeholder="Subject">
+                <textarea  minlength="2" class="message" placeholder="Message here"></textarea>
+                <div>
+                    <p class="error"></p>
+                <input class="btn" type="submit" value="Send Message">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3626.0487285665768!2d46.819173!3d24.656451000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8992d8a906c40bd2!2zMjTCsDM5JzIzLjIiTiA0NsKwNDknMDkuMCJF!5e0!3m2!1sen!2sin!4v1673951418528!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+    <!-- footer starts  here -->
+   <footer class="anim">
+        <div class="row-1">
+            <div class="column column-1">
+                <h1 class="title">Construction work </h1>
+                <ul class="list-1">
+                    <li>
+                        <a href="construction.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            Man holes</a>
+                    </li>
+                    <li>
+                        <a href="construction.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            Asphalat work</a>
+                    </li>
+                    <li>
+                        <a href="construction.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            Epoxy</a>
+                    </li>
+                    <li>
+                        <a href="construction.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            Road paints</a>
+                    </li>
+                    <li>
+                        <a href="construction.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            Flooring</a>
+                    </li>
+                    <li>
+                        <a href="construction.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            Landscaping</a>
+                    </li>
+                    <li>
+                        <a href="construction.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            Water tank</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="column column-2">
+                <h1 class="title">FITOUT</h1>
+                <ul>
+                    <li>
+                        <a href="Fitout.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            Car showrooms</a>
+                    </li>
+                    <li>
+                        <a href="Fitout.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            HVAC</a>
+                    </li>
+                    <li>
+                        <a href="Fitout.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            Shutters
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Fitout.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            Joinery
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Fitout.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            Racking
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Fitout.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            Super markets</a>
+                    </li>
+                    <li>
+                        <a href="Fitout.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            Coffee shop</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="column column-4">
+                <h1 class="title">Steel fabricatin</h1>
+                <ul>
+                    <li>
+                        <a href="fabrication.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            Industrial sheds</a>
+                    </li>
+                    <li>
+                        <a href="fabrication.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            Fuel station</a>
+                    </li>
+                    <li>
+                        <a href="fabrication.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            Mezanine</a>
+                    </li>
+                    <li>
+                        <a href="fabrication.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            Car parking</a>
+                    </li>
+                    <li>
+                        <a href="fabrication.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            Platforms</a>
+                    </li>
+                    <li>
+                        <a href="fabrication.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            Gates</a>
+                    </li>
+                    <li>
+                        <a href="fabrication.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            Fencing system</a>
+                    </li>
+                    <li>
+                        <a href="fabrication.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            Handrails</a>
+                    </li>
+                    <li>
+                        <a href="fabrication.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            AC</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="column column-3">
+                <h1 class="title">NATIONAL ADDRESS</h1>
+                <ul>
+                    <li>
+                        <span>
+                            <i class="fa-solid fa-mobile icon"></i>
+                            011-2213456</span>
+                    </li>
+                    <li>
+                        <a href="mailto:umar@nesmacontractings.com">
+                            <i class="fa-solid fa-envelope icon"></i>
+                            umar@nesmacontractings.com
+                        </a>
+                    </li>
+                    <li>
+                        <span>
+                            <i class="fa-solid fa-location-dot icon"></i>
+                            M/S NESMA AL MUHEET CONTRACTINGS EST <br>
+                            BLDG NO 6515,
+                            KHAIBAR STREET, AL SULAY,<br>
+                            P.O. 14264, PIN CODE: 3361,
+                            RIYADH,<br> KINGDOM OD SAUDI ARABIA
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row-2">
+            NAMCO Copyrights © 2020 | All Rights Reserved
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="animate.js"></script>
+    <script src="validation.js"></script>
+</body>
+</html>

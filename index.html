@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no , minimum-scale=1.0 , maximum-scale=1.0">
+
+    <!-- favicon image -->
+    <link rel='icon' type="image/x-icon" href="images/logo2.png">
+    <!-- fontawesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <!-- own main css file link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- home css file  -->
+    <link rel="stylesheet" href="home.css">
+    <!-- about css file -->
+    <link rel="stylesheet" href="homeAbout.css">
+    <!-- clients css file -->
+    <link rel="stylesheet" href="client.css">
+    <!-- animat.css cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- jquery cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- waypoints cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- own animation css file -->
+    <link rel="stylesheet" href="animate.css">
+    <title>  HOME ||M DOT IT SOLUZIONE</title>
+    <style>
+        .swiper {
+          width: 100%;
+          height: 700px;
+        }
+        
+        
+    
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+    
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        @media screen and (max-width:900px){
+          .swiper {
+          width: 100%;
+          height: 400px;
+        }
+    }
+    @media screen and (max-width:600px){
+          .swiper {
+          width: 100%;
+          height: 370px;
+        }
+    }
+    .autoplay-progress {
+      position: absolute;
+      right: 16px;
+      bottom: 16px;
+      z-index: 10;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: var(--swiper-theme-color);
+    }
+
+    .autoplay-progress svg {
+      --progress: 0;
+      position: absolute;
+      left: 0;
+      top: 0px;
+      z-index: 10;
+      width: 100%;
+      height: 100%;
+      stroke-width: 4px;
+      stroke: var(--swiper-theme-color);
+      fill: none;
+      stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+      stroke-dasharray: 125.6;
+      transform: rotate(-90deg);
+    }
+    #clients .mySwiper{
+        border: 2px solid black;
+        height: 350px;
+        border: none;
+    }
+    #clients .mySwiper .swiper-wrapper .swiper-slide p{
+        
+        padding-top: 10px;
+    }
+     
+      </style>
+</head>
+
+<body>
+    <div class="loading">
+        <div class="spinning"></div>
+    </div>
+    <!-- navbar starts here -->
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"> <img src="images/logo.png" alt="Logo not found">
+              </a>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="about.html" class="nav-link">About us</a>
+            </li>
+            <li class="nav-item drop-container">
+                <a class="nav-link">Our Products</a>
+                <span><i class="fa-solid fa-angle-down angle"></i></span>
+                <div class="dropdown">
+                    <a href="ciscorouter.html" class="dropdown-link ">
+                        <i class="fa-solid fa-angle-right icon"></i>
+                        Cisco Routers</a>
+                    <!-- <a href="Electricalworks.html" class="dropdown-link ">
+                        <i class="fa-solid fa-angle-right icon"></i>
+                        Electrical works</a> -->
+                    <a href="ciscoFirewall.html" class="dropdown-link ">
+                        <i class="fa-solid fa-angle-right icon"></i>
+                        Cisco Firewall</a>
+                    <a href="ciscoswitch.html" class="dropdown-link ">
+                        <i class="fa-solid fa-angle-right icon"></i>
+                        Cisco Switch</a>
+                    <a href="towerworkstation.html" class="dropdown-link ">
+                        <i class="fa-solid fa-angle-right icon"></i>
+                        Tower Workstation</a>
+                        <a href="ciscoswitchandserver.html" class="dropdown-link ">
+                            <i class="fa-solid fa-angle-right icon"></i>
+                            Cisco Switch And Router</a>
+                            <a href="accesspoint.html" class="dropdown-link ">
+                                <i class="fa-solid fa-angle-right icon"></i>
+                                Access Point</a>
+                                <a href="firewall.html" class="dropdown-link ">
+                                    <i class="fa-solid fa-angle-right icon"></i>
+                                    Firewall</a>
+                                    <a href="ip-phone.html" class="dropdown-link ">
+                                        <i class="fa-solid fa-angle-right icon"></i>
+                                        IP Phone</a>
+                                        <a href="router.html" class="dropdown-link ">
+                                            <i class="fa-solid fa-angle-right icon"></i>
+                                            Router</a>
+                                            <a href="server.html" class="dropdown-link ">
+                                                <i class="fa-solid fa-angle-right icon"></i>
+                                                Server</a>
+                                                <a href="switch.html" class="dropdown-link ">
+                                                    <i class="fa-solid fa-angle-right icon"></i>
+                                                    Switches</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Clients</a>
+            </li>
+            <li class="nav-item">
+                <a href="service.html" class="nav-link">Service</a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact us</a>
+            </li>
+        </ul>
+        <div class="menu-bar">
+            <div class="line line-one"></div>
+            <div class="line line-two"></div>
+            <div class="line line-three"></div>
+        </div>
+    </div>
+    <!-- home starts here -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            
+          <div class="swiper-slide"><img src = "images/bg-1.jpg"></img></div>
+          <div class="swiper-slide"><img src = "images/bg-2.jpg"></img></div>
+          <div class="swiper-slide"><img src = "images/bg-3.jpg"></img></div>
+          <div class="swiper-slide"><img src = "images/bg-4.jpg"></img></div>
+        </div>
+    </div>
+    <!-- about starts  here -->
+    <section id="about">
+        <div class="row">
+            <div class="column anim anim-1">
+                <h1 class="heading">Welcome To <span>M Dot IT Soluzione  </span></h1>
+                <p class="text-1 text">
+                    Green IT Soluzione entered in the market as a trader in 2015. We started our journey from Mumbai, Maharashtra with the main aim, which was to deliver premium quality IT solutions to our clients. For this we have tied with renowned and reputed vendors of the market       </p>
+                <p class="text-2 text">
+                    In all these years, we have been widely appreciated for the quality of our Cisco ASA 5540 Fortinet Firewall, Cisco ASA 5510 Firewall, Dell Precision Tower 5810 Workstation, Cisco 1900 Series Router, Cisco 2960-48TC-L POE Ethernet Switch, etc.
+                </p>
+                <a href="about.html" class="btn">READ MORE</a>
+            </div>
+            <div class="column anim anim-2">
+                <img src="images/about-image.jpg" alt="error">
+            </div>
+        </div>
+       
+    </section>
+
+    <!-- product section start here -->
+     <section id="products">
+        <h1>Popular Products</h1>
+        
+     </section>
+
+     <!-- why choose us seciton -->
+     <section id="whychoose">
+        <h1>Why Choose Us..??</h1>
+        <div class="container">
+            <div class="card">
+                <h2>INFRASTRUCTURE</h2>
+                <p>We have modern tools and make use of latest technological amenities to keep a track of our resources as well as storage. We also do quality testing of our procured products and only after assuring that they are ready to be delivered and hit the market shelves, do we send them to our end clients. To make all the business activities hassle free, we have differentiated our framework into various parts related to product structuring, quality testing, deals and promotion.</p>
+            </div>
+            <div class="card">
+                <img src="images/internet-icons-bg.jpg" alt="">
+            </div>
+            <div class="card">
+                <h2>WHAT WE DO</h2>
+                <p>What sets us apart from our many market competitors is our ability to deliver A-quality products on a consistent basis. Moreover, we have been in the domain from more than a decade and it has empowered us to accurately map both the basic and demanding requirements of our clients. We also believe in delivering top quality IT products to our clients and this has helped us earn a wide customer base and attain a reputed position in the market.</p>
+            </div>
+        </div>
+
+     </section>
+
+     <!-- client section start here -->
+      <section id="clients">
+        <h1>What our clients say</h1>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <h4>Aamir Khan</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, eveniet?</p>
+              </div>
+              <div class="swiper-slide">
+                <h4>Aamir Khan</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, eveniet?</p>
+              </div>
+              <div class="swiper-slide">
+                <h4>Aamir Khan</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, eveniet?</p>
+              </div>
+              <div class="swiper-slide">
+                <h4>Aamir Khan</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, eveniet?</p>
+              </div>
+              
+            </div>
+          
+            <div class="swiper-pagination"></div>
+            <div class="autoplay-progress">
+              <svg viewBox="0 0 48 48">
+                <circle cx="24" cy="24" r="20"></circle>
+              </svg>
+              <span></span>
+            </div>
+          </div>
+        
+          <!-- Swiper JS -->
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+          
+      </section>
+
+      <!-- contact section start here -->
+      <section id="contact">
+        <div class="container">
+            <div class="content">
+                <p class="text-2">Want to work with<br><span>M Dot IT Soluzione</span></p>
+                <a href="contact.html">Contact us</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- footer section starts here -->
+    <footer class="anim">
+        <div class="row-1">
+            <div class="column column-1">
+                <h1 class="title">QUICK LINK </h1>
+                <ul class="list-1">
+                    <li>
+                        <a href="index.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            About</a>
+                    </li>
+                    <li>
+                        <a href="service.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            Service</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            Clients</a>
+                    </li>
+                     
+                     
+                </ul>
+            </div>
+            <div class="column column-2">
+                <h1 class="title">CATEGORIES</h1>
+                <ul>
+                    <li>
+                        <a href="ciscorouter.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            Cisco Router</a>
+                    </li>
+                    <li>
+                        <a href="ciscoFirewall.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            Cisco Firewall</a>
+                    </li>
+                    <li>
+                        <a href="ciscoswitch.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            Cisco Switch
+                        </a>
+                    </li>
+                    <li>
+                        <a href="towerworkstation.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            Tower Workstation
+                        </a>
+                    </li>
+                    <li>
+                        <a href="ciscoswitchandserver.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            Switch And Router
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="column column-4">
+                <h1 class="title">CATEGORIES</h1>
+                <ul>
+                    <li>
+                        <a href="accesspoint.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            Access Point</a>
+                    </li>
+                    <li>
+                        <a href="firewall.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            Firewall</a>
+                    </li>
+                    <li>
+                        <a href="ip-phone.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            IP Phone</a>
+                    </li>
+                    <li>
+                        <a href="router.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            Router</a>
+                    </li>
+                    <li>
+                        <a href="server.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            Server</a>
+                    </li>
+                    <li>
+                        <a href="switch.html">
+                            <i class="fa-solid fa-angle-right angle-right icon"></i>
+                            Switches</a>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="column column-3">
+                <h1 class="title">ADDRESS</h1>
+                <ul>
+                    <li>
+                        <span>
+                            <i class="fa-solid fa-mobile icon"></i>
+                           +91 7704949022</span>
+                    </li>
+                    <li>
+                        <a href="mailto: mdotitsoluzione@gmail.com">
+                            <i class="fa-solid fa-envelope icon"></i>
+                            mdotitsoluzione@gmail.com
+                        </a>
+                    </li>
+                    <li>
+                        <span>
+                            <i class="fa-solid fa-location-dot icon"></i>
+                            Shop No B2 , Vishal Niwas ,Tilak Nagar, 90 Feet Rd, Saki Naka, Mumbai, Maharashtra 400072
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row-2">
+            M Dot IT Copyrights © 2024 | All Rights Reserved
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="animate.js"></script>
+    <script src="javascript/swiper.js"></script>
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+
+</html>

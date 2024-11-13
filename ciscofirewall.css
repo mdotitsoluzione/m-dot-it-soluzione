@@ -1,0 +1,116 @@
+/* home design starts here */
+#cisco-home{
+    height:70vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:url('images/cisco-bg.jpg') left center , rgb(253, 238, 211) ;
+    background-blend-mode: multiply;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    
+}
+#cisco-home .content h1{
+    font-size:35px;
+    color: white;
+    text-align: center;
+}
+#cisco-home .content .link{
+    font-size:20px;
+    text-align:center;
+    padding-top: 10px;
+    font-weight: 500;
+    color: aqua;
+}
+#cisco-home .content .link a{
+    color:var(--blueviolet);
+    transition:all 0.3s ease;
+}
+#cisco-home .content .link a:hover{
+    text-decoration:underline;
+}
+#content{
+   height:100vh;
+    width: 100%;
+    padding:40px 60px;
+    text-align: justify;
+    line-height: 2;
+    font-weight: 400;
+    
+}
+
+.card-container {
+    display: flex;
+    gap: 20px; /* Space between cards */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    justify-content: center; /* Center the cards */
+    margin-top: 50px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 30%; /* Default card width for larger screens */
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 20px; /* Space below each card */
+    border: none;
+  }
+  
+  .card img {
+    
+    width: 100%; /* Image size */
+    height: 80%;
+    margin-bottom: 10px;
+  }
+  
+  .card h3 {
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  /* Media query for phone size (max width 600px) */
+  @media (max-width: 600px) {
+    .card-container {
+      flex-direction: column; /* Stack cards vertically */
+      align-items: center; /* Center align cards */
+    }
+    #cisco-home .content h1{
+      font-size: 20px;
+    }
+    #content h1{
+      font-size:20px !important;
+    }
+    #content{
+        height: 100%;
+        padding:0px;
+    }
+    #content p {
+        padding: 10px 20px;
+    }
+    .content{
+        padding: 10px 20px !important;
+    }
+    .content h1,h2{
+      line-height: 1;
+  
+      font-size: 20px !important;
+    }
+  
+    .card {
+      width: 90%; /* Make each card take full width of the container */
+      padding: 15px;
+    }
+  
+    .card h3 {
+      font-size: 1em; /* Adjust text size for smaller screens */
+    }
+  }
+ .content{
+    width: 100%;
+    padding:80px 60px;
+    text-align: justify;
+    line-height: 2;
+    font-weight: 400;
+ }
